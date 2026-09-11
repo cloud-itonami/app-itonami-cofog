@@ -1,7 +1,7 @@
-;; scripts/inventory.cljs — appview カタログの構造検査 + 在庫表。
+;; scripts/inventory.cljk — appview カタログの構造検査 + 在庫表。
 ;;
-;;   nbb scripts/inventory.cljs          要約だけ
-;;   nbb scripts/inventory.cljs --list   1 行 1 code の在庫表も出す
+;;   nbb scripts/inventory.cljk          要約だけ
+;;   nbb scripts/inventory.cljk --list   1 行 1 code の在庫表も出す
 ;;
 ;; この repo は 202 個のディレクトリがほぼ同じ形をしているので、目視では
 ;; 「1 つだけ形が違う」が見えない。ここで固定するのは次の 4 つだけ:

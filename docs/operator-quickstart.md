@@ -28,7 +28,7 @@ step 1・2 は素の `nbb` だけで動く。
 ## 1. 構造検査（毎回これを先に）
 
 ```bash
-nbb scripts/inventory.cljs
+nbb scripts/inventory.cljk
 ```
 
 ```
@@ -63,11 +63,11 @@ OK: 構造違反なし
 
 ```bash
 printf '{ broken' > appview/cofog-0421-agriculture-component/kotodama.jsonld
-nbb scripts/inventory.cljs; echo "exit=$?"     # exit=1 kotodama.jsonld が読めない
+nbb scripts/inventory.cljk; echo "exit=$?"     # exit=1 kotodama.jsonld が読めない
 git checkout -- appview/cofog-0421-agriculture-component/kotodama.jsonld
 
 mkdir appview/some-other-thing
-nbb scripts/inventory.cljs; echo "exit=$?"     # exit=1 component でも legacy service でもない
+nbb scripts/inventory.cljk; echo "exit=$?"     # exit=1 component でも legacy service でもない
 rmdir appview/some-other-thing
 ```
 
@@ -76,7 +76,7 @@ manifest の `name` を書き換える／legacy service を 1 本退避する、
 ## 2. 在庫表
 
 ```bash
-nbb scripts/inventory.cljs --list
+nbb scripts/inventory.cljk --list
 ```
 
 要約のあとに `code / 状態 / ディレクトリ` が 101 行。`implemented` は 1 行だけで、
