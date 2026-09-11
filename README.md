@@ -28,7 +28,7 @@ appview/
   cofog-<code>-<slug>-component/         101 本  TS-native 移行先。実装は 1 本のみ
   etzhayyim-performer-…-svc-cofog-…/     101 本  legacy service（git-subrepo）
 README.edn / migration.edn / NOTICE      抽出の由来（下記）
-scripts/inventory.cljs                   カタログの構造検査
+scripts/inventory.cljk                   カタログの構造検査
 docs/operator-quickstart.md              最初に踏む手順
 ```
 
@@ -85,7 +85,7 @@ Compliance Rider v3.1）。
   actor ごとの DID にはなっていない。project 単位の DID を各 manifest が
   そのまま持っている状態。
 - COFOG code の表記が 2 箇所だけ 4 桁でない（division の `10`、
-  budget-management の `01-1`）。`scripts/inventory.cljs` は正規化せずそのまま
+  budget-management の `01-1`）。`scripts/inventory.cljk` は正規化せずそのまま
   鍵にしている — 揃えると legacy 側との対応が崩れるため。
 - `org-un-cofog` が公開済みの 10 class はすべてこのカタログに在るが、逆に
   このカタログの 87 code は `org-un-cofog` 側が未公開（あちらは 96 class 中 10）。
