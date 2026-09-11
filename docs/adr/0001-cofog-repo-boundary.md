@@ -59,7 +59,7 @@ etzhayyim の `60-apps/etzhayyim-project-cofog`（source revision `4d24eba6`）�
 ## Consequences
 
 - 202 ディレクトリの中で 1 本だけが実装であることが、README と
-  `nbb scripts/inventory.cljk` の 1 行目から読める。ファイル数で実装量を測ると
+  `kbb --backend sci scripts/inventory.cljk` の 1 行目から読める。ファイル数で実装量を測ると
   `cofog-0111-executive-component`（38 ファイル中 36 が全部同一内容 194 バイトの
   `empty.s` プレースホルダ）を実装と誤読するが、`src/` の有無で測ればしない。
 - 1 対 1 の写しが崩れたとき、目視ではなく exit 1 で分かる。

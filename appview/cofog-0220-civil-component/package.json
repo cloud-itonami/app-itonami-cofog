@@ -4,7 +4,7 @@
   "description": "COFOG 0220 governed passive civil-defense event relay boundary",
   "main": "src/cofog/civil_defense.kotoba",
   "scripts": {
-    "test": "nbb scripts/verify.cljs"
+    "test": "kbb --backend sci scripts/verify.cljk"
   },
   "keywords": [],
   "author": "",
